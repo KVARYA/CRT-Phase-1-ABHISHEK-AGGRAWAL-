@@ -82,3 +82,35 @@ int main(){
     
 }
 
+//Problem 5
+// Area of shapes
+//1--CIRCLE.... 2--RECTANGLE... 3--SQUARE
+
+#include<iostream>
+using namespace std;
+
+int main(){
+   int choice;
+   cin>>choice;
+   
+   if(choice ==1){
+       double radius;
+       cin>> radius;
+       cout<< 3.14*radius*radius<<endl;
+   } else if(choice ==2){
+       double lenght, width;
+       cin>> lenght >> width;
+       cout<< lenght*width<<endl;
+   } else if (choice==3){
+       double base, height;
+       cin>> base >> height;
+       cout<< 0.5*base*height<<endl;
+   } else{
+       cout<<" invalid choice" <<endl;
+   }
+   
+    
+    return 0;
+    
+}
+
