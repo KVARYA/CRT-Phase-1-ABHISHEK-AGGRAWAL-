@@ -114,3 +114,29 @@ int main(){
     
 }
 
+
+//Problem 6
+// Sum and Average
+
+
+#include<iostream>
+using namespace std;
+
+int main(){
+  int a,b,c;
+  int sum;
+  float Avg;
+  cin>>a>>b>>c;
+  
+  sum= a+b+c;
+  cout<<"Sum="<<sum<<endl;
+  
+  // AVERAGE
+  
+  Avg= sum/3.0;
+  cout<<"Average="<<Avg<<endl;
+    
+    return 0;
+    
+}
+
