@@ -29,7 +29,7 @@ int main(){
     float result;
     
     cin>> userInput;
-    result = (double)globalvariable / userInput;
+    result = (double)globalvariable / userInput;  //TYPECasting int to double
     cout<<result;
     
     
