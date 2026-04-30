@@ -1,0 +1,40 @@
+//Temprature Conversion 
+//take input in form of celcius and convert into fahrenhite
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    
+    double celcius, fahrenhite;
+    cin>> celcius;
+    fahrenhite = (celcius*9.0/5.0) + 32.0;
+    cout<<fahrenhite;
+    
+    return 0;
+    
+}
+
+//Global vs Local Variables
+
+#include<iostream>
+using namespace std;
+
+//global Variables
+int globalvariable = 100;
+
+int main(){
+    // local Variables
+    int userInput;
+    float result;
+    
+    cin>> userInput;
+    result = (double)globalvariable / userInput;
+    cout<<result;
+    
+    
+    
+    return 0;
+    
+}
+
