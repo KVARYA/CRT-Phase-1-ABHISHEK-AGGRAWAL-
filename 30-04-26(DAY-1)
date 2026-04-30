@@ -167,3 +167,26 @@ int main(){
     
 }
 
+// HOMEWORK
+//Problem 8
+// Alphabet Case Checker
+
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    char letter;
+    cin>> letter;
+    
+    bool isUpper = (letter>= 'A' && letter<= 'Z');
+    bool isLower = (letter>= 'a' && letter<= 'z');
+    
+    cout<<"UPPERCASE"<<isUpper<<endl;
+    cout<<"Lowercase"<<isLower<<endl;
+    
+    
+    return 0;
+    
+}
+
