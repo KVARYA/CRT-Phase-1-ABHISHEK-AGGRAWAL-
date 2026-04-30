@@ -1,3 +1,4 @@
+//Problem 1
 //Temprature Conversion 
 //take input in form of celcius and convert into fahrenhite
 
@@ -15,6 +16,7 @@ int main(){
     
 }
 
+//Problem 2
 //Global vs Local Variables
 
 #include<iostream>
@@ -32,6 +34,25 @@ int main(){
     result = (double)globalvariable / userInput;  //TYPECasting int to double
     cout<<result;
     
+    
+    
+    return 0;
+    
+}
+
+//Problem 3 
+// Logical and Relational Operators
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int side1, side2, side3;
+    cin>> side1 >> side2 >> side3;
+    
+    bool isEqui = (side1 >0) && (side1 == side2) && (side2==side3);
+    cout<<isEqui<<endl;
+
     
     
     return 0;
