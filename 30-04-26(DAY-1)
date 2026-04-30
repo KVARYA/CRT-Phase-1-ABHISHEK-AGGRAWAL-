@@ -190,3 +190,31 @@ int main(){
     
 }
 
+// HOMEWORK
+//Problem 9
+// Age Group Classifier
+
+
+#include<iostream>
+using namespace std;
+
+int main(){
+   int age;
+   cout<<"Enter the Age:";
+   cin>>age;
+   
+   bool isChild =(age>= 0 && age<= 12);
+   bool isTeen =(age>= 13 && age<= 19);
+   bool isAdult =(age>= 20 && age<= 59);
+   bool isSenior =(age>= 60 );
+    
+   cout<<"Child is:"<<isChild<<endl;
+   cout<<"Teen is:"<<isTeen<<endl;
+   cout<<"Adult is:"<<isAdult<<endl;
+   cout<<"Senior is:"<<isSenior<<endl;
+   
+   
+    return 0;
+    
+}
+
