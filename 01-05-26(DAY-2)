@@ -15,3 +15,24 @@ int main(){
 
     return 0;
 }
+
+
+//PROBLEM 2---if-esle condition
+//to verify user's wether eligible for vote or note..?
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int age;
+    cin>>age;
+    
+    if(age>=18){
+        cout<<"Eligible for Vote"<<endl;
+    } else {
+        cout<<"Not Eligible for Vote"<<endl;
+    }
+    
+    
+    return 0;
+}
