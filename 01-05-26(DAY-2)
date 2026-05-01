@@ -63,3 +63,23 @@ int main(){
     
     return 0;
 }
+
+
+//PROBLEM 4---Turnery Operator
+//find the greater number among two
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int a,b;
+    int max_number;
+    cin>>a>>b;
+    
+    //turnery Operator
+    max_number=(a>b) ? a:b;
+    
+    cout<<"Maximum Number is:"<<max_number;
+    
+    return 0;
+}
