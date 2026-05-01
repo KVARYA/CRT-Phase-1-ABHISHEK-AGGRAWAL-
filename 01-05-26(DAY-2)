@@ -1,0 +1,17 @@
+//PROBLEM 1---if condition
+//to verify user's wether eligible for vote
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int age;
+    cin>>age;
+    
+    if(age>=18){
+        cout<<"Eligible for Vote"<<endl;
+    }
+    
+
+    return 0;
+}
