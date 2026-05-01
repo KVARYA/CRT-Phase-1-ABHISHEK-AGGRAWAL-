@@ -161,3 +161,44 @@ int main(){
     
     return 0;
 }
+
+
+//PROBLEM 8
+// Customer Support IVR System
+// 1-- for support
+// 2-- for billing
+// 3-- Technical issues
+// 4-- Talk to the Agent
+
+
+#include<iostream>
+using namespace std;
+
+int main(){
+   int choice;
+   cin>>choice;
+   
+   switch(choice) {
+       case 1:
+       cout<<"Translating call to the Customer support...";
+       break;
+       
+       case 2: 
+       cout<<"Transferring call to billing and accounts...";
+       break;
+       
+       
+       case 3:
+       cout<<"Connecting to our Technical Help Desk...";
+       break;
+       
+       case 4:
+       cout<<"Connecting call to the Agent...";
+       break;
+       
+       default :
+       cout<<"Invalid selection , Enter a valid number...";
+   }
+    
+    return 0;
+}
