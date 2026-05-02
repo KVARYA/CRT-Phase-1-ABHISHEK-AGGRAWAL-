@@ -14,3 +14,20 @@ int main()
 
     return 0;
 }
+
+//Problem 1.A -- 
+//Print 1 to 10 using a for loop(10 to 1)
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+     
+    for(int i=10 ; i>=1; i--){
+        cout<<i<<" ";
+    }
+    
+
+    return 0;
+}
