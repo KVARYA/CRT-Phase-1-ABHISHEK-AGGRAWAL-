@@ -339,3 +339,33 @@ int main() {
 
     return 0;
 }
+
+
+// Home-Work
+// Problem 13 -- ATM Withdraw Validater
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int balance, withdraw;
+    cout << "Enter Account Balance: ";
+    cin >> balance;
+    cout << "Enter Withdrawal Amount: ";
+    cin >> withdraw;
+
+    if (withdraw <= 0) {
+        cout << "Invalid Amount..";
+    }
+    else if (withdraw > balance) {
+        cout << "Insufficient Balance..";
+    }
+    else if (withdraw % 100 != 0) {
+        cout << "Amount must be multiple of 100!";
+    }
+    else {
+        cout << "Withdrawal Successful!";
+    }
+
+    return 0;
+}
