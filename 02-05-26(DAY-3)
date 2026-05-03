@@ -287,6 +287,38 @@ int main() {
 }
 
 
+// Homework
+// Pronlem 14 --
+// Atm pin Retry System 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int correctPIN = 1234;
+    int enteredPIN;
+    int attempts = 0;
+    int maxAttempts = 3;
+
+    while (attempts < maxAttempts) {
+        cout << "Enter your PIN: ";
+        cin >> enteredPIN;
+
+        if (enteredPIN == correctPIN) {
+            cout << "Access Granted!" << endl;
+            return 0; // exit program
+        } else {
+            cout << "Incorrect PIN!" << endl;
+            attempts++;
+        }
+    }
+
+    cout << "Card Blocked. Too many incorrect attempts." << endl;
+    return 0;
+}
+
+    
+
     
 
 
