@@ -242,6 +242,28 @@ int main(){
     
 }
 
+
+// Homework
+// Pronlem 13 --
+// CountDown Timer
+
+#include <iostream>
+using namespace std;
+
+int main(){
+   int n;
+   cout<<"start the timer from:";
+   cin>>n;
+   
+   for(int i=n; i>=0; i--){
+       cout<<i<<endl;
+   }
+   cout<<"Time's up...";
+    
+    return 0;
+    
+}
+
     
 
     
