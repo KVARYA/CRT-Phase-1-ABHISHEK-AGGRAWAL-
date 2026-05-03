@@ -264,6 +264,32 @@ int main(){
     
 }
 
+// Homework
+// Pronlem 13.1 --
+// CountDown Timer (in seconds)
+
+#include <iostream>
+#include <unistd.h> // for sleep() on Linux/Unix
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter countdown time (in seconds): ";
+    cin >> n;
+
+    for (int i = n; i >= 0; i--) {
+        cout << i << endl;
+        sleep(1); // wait for 1 second
+    }
+
+    cout << "Time's up!" << endl;
+    return 0;
+}
+
+
+    
+
+
     
 
     
