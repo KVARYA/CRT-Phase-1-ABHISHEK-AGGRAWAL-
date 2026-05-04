@@ -50,9 +50,12 @@ int main(){
 #include <iostream>
 using namespace std;
 int main(){
+    int n;
+    cout<<"Enter the Row:";
+    cin>>n;
     
     // number of times to print the pattern
-    for(int i=1; i<=6; i++){
+    for(int i=1; i<=n; i++){
         
         //What to print in the pattern
         for(int j=1; j<=i; j++){
@@ -65,5 +68,6 @@ int main(){
     return 0;
     
 }
+
 
 
