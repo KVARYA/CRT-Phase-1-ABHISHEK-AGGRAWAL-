@@ -69,5 +69,37 @@ int main(){
     
 }
 
+// Problem 4 --
+//Print a Right Angle Triangle with spaces
+
+
+#include <iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter the Rows:";
+    cin>>n;
+    
+    // number of times to print the pattern
+    for(int i=1; i<=n; i++){
+    
+        
+        //What to print in the pattern space here
+        for(int j=n-i; j>=1; j--){
+            cout<< " "  ;
+        }
+        
+        // number of * 
+        for(int k=1; k<=i; k++){
+            cout<<"*";
+        }
+        cout<< "\n";
+    }
+    
+     
+    return 0;
+    
+}
+
 
 
