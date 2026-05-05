@@ -65,6 +65,25 @@ int main(){
     return 0;
 }
 
+//Problem 4--
+//Types of functions
+//4.1 -- NO Argument and No return type
+
+#include <iostream>
+using namespace std;
+
+void DoorBell(){
+    cout<<"Ting Tong...";
+    
+}
+
+int main(){
+   DoorBell();
+    
+    return 0;
+}
+
+
    
 
     
