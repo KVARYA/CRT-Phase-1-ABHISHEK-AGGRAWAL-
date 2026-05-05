@@ -118,6 +118,28 @@ int main(){
     return 0;
 }
 
+//Problem 4--
+//Types of functions
+//4.4 --  Argument with return type
+
+#include <iostream>
+using namespace std;
+
+int currencyConversion( int amountInUSD){
+    return amountInUSD/100;
+}
+
+int main(){
+    cout<<currencyConversion(100);
+    
+    return 0;
+}
+
+   
+
+    
+
+
    
 
     
