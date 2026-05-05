@@ -100,6 +100,29 @@ int main(){
     return 0;
 }
 
+//Problem 4--
+//Types of functions
+//4.3 -- No Argument but  return type
+
+#include <iostream>
+using namespace std;
+
+int TicketNumber(){
+    return 101;
+}
+
+
+int main(){
+    cout<<TicketNumber();
+    
+    return 0;
+}
+
+   
+
+    
+
+
    
 
     
