@@ -29,6 +29,27 @@ int main(){
     return 0;
 }
 
+//Problem 2--
+//Function Declaration and Initilization
+
+#include <iostream>
+using namespace std;
+
+void printMessage() {
+    cout<<" Hii we are learning function...";
+}
+
+int main(){
+    printMessage();
+    
+    return 0;
+}
+
+   
+
+    
+
+
    
 
     
