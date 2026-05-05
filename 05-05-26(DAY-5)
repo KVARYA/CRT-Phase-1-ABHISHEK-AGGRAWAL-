@@ -45,6 +45,31 @@ int main(){
     return 0;
 }
 
+//Problem 3--
+//Making a Function with Argument and return type
+
+#include <iostream>
+using namespace std;
+
+int area( int a , int b){
+    return a * b;
+}
+int main(){
+    int length = 10;
+    int width = 5;
+   int areaofRectangle = area(length, width);
+    
+    cout<< areaofRectangle;
+    
+    
+    return 0;
+}
+
+   
+
+    
+
+
    
 
     
