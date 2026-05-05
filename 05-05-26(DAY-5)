@@ -83,6 +83,28 @@ int main(){
     return 0;
 }
 
+//Problem 4--
+//Types of functions
+//4.2 -- Argument but No return type
+
+#include <iostream>
+using namespace std;
+
+void sendText(string message){
+    cout<<message;
+}
+
+int main(){
+   sendText("BJP Wons...!");
+    
+    return 0;
+}
+
+   
+
+    
+
+
 
    
 
