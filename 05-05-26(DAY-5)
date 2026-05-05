@@ -125,7 +125,7 @@ int main(){
 #include <iostream>
 using namespace std;
 
-int currencyConversion( int amountInUSD){
+int currencyConversion( int amountInINR){
     return amountInUSD/100;
 }
 
@@ -134,6 +134,10 @@ int main(){
     
     return 0;
 }
+
+   
+
+    
 
    
 
