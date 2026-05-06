@@ -84,6 +84,42 @@ int main(){
   
 }
 
+//Problem 5 --
+//Practice Problems
+// Smart AC Remote // Function Overloading // Default Arguments
+#include <iostream>
+using namespace std;
+
+void setTemprature( int temp = 22){
+    cout<<"Temprature set to: "<< temp << "⁰C"<< endl;
+}
+
+void setTemprature( double temp){
+    cout<<"Temprature set to: "<< temp << "⁰C"<< endl;
+}
+
+void setTemprature( string mode){
+    if (mode == "ECO"){
+         cout<<"Temprature set to 24⁰C"<<endl;
+        
+    } else if (mode == "TURBO"){
+        cout<<"Temprature set to 18⁰C"<<endl;
+    }
+   
+}
+
+
+int main(){
+   
+   setTemprature(); // default value -- 22
+   setTemprature(20.5); // manually seting the temprature
+   setTemprature("ECO"); // Set temprature to 24
+   setTemprature("TURBO"); // Set tempratureto 18
+   
+   return 0;
+  
+}
+
 
 
 
