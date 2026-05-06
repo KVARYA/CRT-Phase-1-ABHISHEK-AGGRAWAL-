@@ -120,6 +120,31 @@ int main(){
   
 }
 
+//Problem 6 --
+// Classes and Objects
+
+#include <iostream>
+using namespace std;
+class student {
+    public:
+     string name;
+     int age;
+     
+void introduce(){
+    cout<<"Hi there his name is: "<< name <<" and his age is: "<< age;
+     }
+};
+
+int main(){
+    student s1;
+    s1.name = "Abhisek";
+    s1.age = 24;
+    s1.introduce();
+   
+   return 0;
+  
+}
+
 
 
 
