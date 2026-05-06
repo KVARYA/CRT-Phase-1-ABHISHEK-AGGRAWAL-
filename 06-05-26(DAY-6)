@@ -36,6 +36,35 @@ int main(){
     return 0;
 }
 
+//Problem 3 --
+//Cll by Value and Call by Refrence
+// call ny value means photocopy and 
+//callby Refrence means original copy(address)
+
+#include <iostream>
+using namespace std;
+void updatebyValue( int a){
+     a = 500;
+}
+
+void updatebyRefrence(int &a){
+    a = 500;
+}
+
+int main(){
+   int original = 100;
+   cout<<original<<endl;
+   
+   updatebyValue(original);
+   cout<<original<<endl;
+   updatebyRefrence(original);
+   cout<<original;
+    return 0;
+}
+
+
+
+
 
 
 
