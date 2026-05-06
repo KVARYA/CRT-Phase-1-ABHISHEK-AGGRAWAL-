@@ -62,6 +62,27 @@ int main(){
     return 0;
 }
 
+//Problem 4 --
+//Practice Problems
+
+#include <iostream>
+using namespace std;
+
+int CoffiePrice( int a, int b = 30){
+    return a*b;
+}
+
+
+int main(){
+   int a;
+   cout<< "Enter the numbers of Coffies:";
+   cin>>a;
+   
+   cout<<"Final Bill:"<<CoffiePrice(a);
+   
+   return 0;
+  
+}
 
 
 
