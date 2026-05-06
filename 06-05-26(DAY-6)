@@ -1,1 +1,24 @@
+//Problem 1 --
+//Swap of Values of 2 Variables using Swap function 
+
+#include <iostream>
+using namespace std;
+void swapNumber( int* x, int* y){
+    int temp = *x;
+    *x=*y;
+    *y= temp;
+}
+
+int main(){
+    int a, b;
+    cout<<"Enter value of a & b(before swap):";
+    cin>>a;
+    cin>>b;
+    
+    swapNumber(&a , &b);
+    cout<<a << " "<< b;
+    return 0;
+}
+
+
 
