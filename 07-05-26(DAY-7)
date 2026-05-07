@@ -37,6 +37,40 @@ class child : public Parent{
   void AccessofSecretCode(){
       cout<<"secret Code of the locker is: "<< secretCode;
  }
+
+//prctice problem
+// Access Modifiers
+//7.3 -- Protected
+
+#include <iostream>
+using namespace std;
+class Parent{
+protected:    
+    int secretCode = 1234;
+    
+
+};
+
+class child : public Parent{
+ public:   
+  void AccessofSecretCode(){
+      cout<<"secret Code of the locker is: "<< secretCode;
+ }
+ private:
+    int password = 2811;
+    
+public:
+void PrintPassword () {
+    cout<<"Your Password is: "<< password;
+}
+    
+};
+int main(){
+   child s;
+   s.AccessofSecretCode();
+   s.PrintPassword();
+   return 0;
+}
     
 };
 int main(){
