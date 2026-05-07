@@ -20,3 +20,27 @@ int main(){
    myaccount.showBalance();
    return 0;
 }
+
+//Problem 1--
+// Access Modifiers
+//7.3 -- Protected
+
+#include <iostream>
+using namespace std;
+class Parent{
+protected:    
+    int secretCode = 1234;
+};
+
+class child : public Parent{
+ public:   
+  void AccessofSecretCode(){
+      cout<<"secret Code of the locker is: "<< secretCode;
+ }
+    
+};
+int main(){
+   child s;
+   s.AccessofSecretCode();
+   return 0;
+}
