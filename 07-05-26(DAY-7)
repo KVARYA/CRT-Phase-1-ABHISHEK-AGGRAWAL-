@@ -44,3 +44,36 @@ int main(){
    s.AccessofSecretCode();
    return 0;
 }
+
+//Problem 2--
+//Constructors
+//Types -- 2.1 -- default
+//         2.2 -- parameterized
+//         2.3 -- Copy
+
+// 2.1 -- Default  Constructors
+#include <iostream>
+using namespace std;
+class WifiConnection {
+public:
+    string networkName;
+    string password;
+    
+    //Constructors
+    WifiConnection(){
+        networkName = "JU Wi-Fi";
+        password = "BJP Wons";
+    }
+    
+public:
+    void showDetails(){
+     cout<<"Network name is: "<< networkName << "and its Password is: "<< password;
+    }    
+    
+};
+
+int main(){
+   WifiConnection obj1;
+   obj1.showDetails();
+   return 0;
+}
