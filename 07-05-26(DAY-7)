@@ -1,1 +1,22 @@
+//Problem 1--
+// Access Modifiers
+//7.2 -- Private
 
+#include <iostream>
+using namespace std;
+class BankAccount {
+private:
+      int Balance = 5000;
+    
+public:
+void showBalance(){
+    cout<<"Balance in your account is: "<< Balance;
+}
+ 
+};
+
+int main(){
+   BankAccount myaccount;
+   myaccount.showBalance();
+   return 0;
+}
