@@ -181,3 +181,10 @@ int main(){
    
    return 0;
 }
+
+//Problem 4--
+//Piller of oops
+//Abstraction
+//Hiding the impeimentation and showing only the neccessary and essencial features to the users
+//abstract class -- class can not bhi initialized and form using the abstract keyword
+//abstract method -- There is no initialization of the abstract method
