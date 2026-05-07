@@ -77,3 +77,28 @@ int main(){
    obj1.showDetails();
    return 0;
 }
+
+// 2.2 -- Parameterized Constructors
+#include <iostream>
+using namespace std;
+class Student{
+    public:
+    string name;
+    int id;
+    // Constructors 
+    
+    Student(string studentName, int studentID){
+        name = studentName;
+        id = studentID;
+    }
+void displayDetails(){
+    cout<< name << " "<< id;
+}
+    
+};
+
+int main(){
+   Student std1("Abhishek", 101);
+   std1.displayDetails();
+   return 0;
+}
