@@ -133,3 +133,31 @@ int main(){
    obj1.Parent2::giveMeMoney();
    return 0;
 }
+
+// Problem 5--
+// Inheritance 
+// Tpyes -- 1.5 Hybrid Inheritance
+
+#include <iostream>
+using namespace std;
+class A{
+    public:
+    void print(){
+        cout<<"BJP Wons..."<<endl;
+    }
+};
+ class B : virtual public A{
+  // No logic
+};
+ class C : public virtual A{
+    //No logic
+};
+
+class D : public B, public C{
+    
+};
+int main(){
+   D obj1;
+   obj1.print();
+   return 0;
+}
