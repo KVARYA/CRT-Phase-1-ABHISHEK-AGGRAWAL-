@@ -214,3 +214,39 @@ int main(){
    
    return 0;
 }
+
+// Problem 7 -- 
+// Polymorphism 
+// Types of Polymorphism -- 2
+//Function Overriding
+
+#include <iostream>
+using namespace std;
+class Animal{
+    public:
+    virtual void Sound(){
+        cout<<"Animal makes sound"<<endl;
+    }
+};
+class Dog : public Animal {
+    public:
+    void  Sound() override{
+        cout<<"Dog makes sound"<<endl;
+    }
+};
+
+class Cat : public Animal {
+    public:
+    void Sound() override{
+        cout<<"Cat makes sound"<<endl;
+    }
+};
+   
+
+int main(){
+   Cat c;
+   c.Sound();
+   Dog d; 
+   d.Sound();
+   return 0;
+}
