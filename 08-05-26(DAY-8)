@@ -161,3 +161,56 @@ int main(){
    obj1.print();
    return 0;
 }
+
+// Problem 6 -- 
+// Polymorphism 
+// it means one names but many forms
+// same function behave diffrently depending on the type of the object it called
+// two types 
+// Compile time Polymorphism -- Function Overloading -- Static
+// Resolved at compile time
+// Function overlads -- same Function, but diffrent parameters
+// faster execution
+// Run time Polymorphism -- Function Overloading -- Dynamic
+// Resolved at run time
+// Function runtime -- same function name, same parameters but diffrent class
+// it uses a Virtual Keyword in the base class
+// achieving this through the concept of Inheritance
+
+
+// Types of Polymorphism -- 2
+//Function Overloading
+#include <iostream>
+using namespace std;
+class A{
+     public:
+    void Value(){
+        cout<<"There is no Parameters...."<< endl;
+    }
+    public:
+    int Value(int a){
+        return a;
+    }
+    public:
+    int Value(int a, int b){
+        return a*b;
+    }
+    public:
+    int Value(int a, int b, int c){
+        return a*b*c;
+    }
+
+};
+
+   
+
+int main(){
+   A obj;
+   obj.Value();
+   cout<<obj.Value(5) << endl;;
+   cout<<obj.Value(5,10) << endl;
+   cout<<obj.Value(5,10,20);
+   
+   
+   return 0;
+}
