@@ -27,3 +27,40 @@ int main(){
    
    return 0;
 }
+
+// Problem 2--
+// Inheritance 
+// Tpyes -- 1.2 Multilevel Inheritance
+
+#include <iostream>
+using namespace std;
+class vehicle{
+    public:
+    void start(){
+        cout<<"Vehicle is start..."<<endl;
+    }
+    
+};
+
+class car: public vehicle {
+    public:
+    void drive() {
+        cout<<"Car is running...."<<endl;
+    }
+    
+    
+};
+class speedoMeter : public car{
+  public:
+  void speed(){
+      cout<<"Car speed is 120kmh..."<<endl;
+  }
+};
+int main(){
+   speedoMeter obj1;
+   obj1.start();
+   obj1.drive();
+   obj1.speed();
+   
+   return 0;
+}
