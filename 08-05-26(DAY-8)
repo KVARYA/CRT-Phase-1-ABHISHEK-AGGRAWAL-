@@ -1,0 +1,29 @@
+// Problem 1--
+// Inheritance 
+// Tpyes -- 1.1 Single Inheritance
+
+#include <iostream>
+using namespace std;
+class vehicle{
+    public:
+    void start(){
+        cout<<"Vehicle is start"<<endl;
+    }
+    
+};
+
+class car: public vehicle {
+    public:
+    void drive() {
+        cout<<"Car is running"<<endl;
+    }
+    
+    
+};
+int main(){
+   car obj1;
+   obj1.start();
+   obj1.drive();
+   
+   return 0;
+}
