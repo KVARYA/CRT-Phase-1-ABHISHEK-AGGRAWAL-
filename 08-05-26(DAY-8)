@@ -103,3 +103,33 @@ int main(){
    obj2.drive();
    return 0;
 }
+
+// Problem 4--
+// Inheritance 
+// Tpyes -- 1.4 Multiple Inheritance
+
+#include <iostream>
+using namespace std;
+class Parent1{
+    public:
+    void giveMeMoney(){
+        cout<<"Mummy paisa do mujhe"<<endl;
+    }
+};
+
+class Parent2 {
+    public:
+    void giveMeMoney(){
+        cout<<"Papa paisa do mujhe"<<endl;
+    }
+};
+
+class Child : public Parent1, public Parent2 {
+    
+};
+int main(){
+   Child obj1;
+   obj1.Parent1::giveMeMoney();
+   obj1.Parent2::giveMeMoney();
+   return 0;
+}
