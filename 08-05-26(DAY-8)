@@ -250,3 +250,33 @@ int main(){
    d.Sound();
    return 0;
 }
+
+
+// Problem 7 -- 
+// Polymorphism 
+// Types of Polymorphism -- 2
+//Function Overriding
+
+#include <iostream>
+using namespace std;
+class Parent{
+    public:
+    virtual void Sum(int a , int b){
+        cout<<a+b<<" this is from Parent"<<endl;
+    }
+};
+class Child : public Parent {
+    public:
+    void Sum(int a , int b) override{
+        cout<<a+b<<" this from child"<<endl;
+    }
+};
+
+
+
+int main(){
+   Child c;
+   c.Sum(10,20);
+   
+   return 0;
+}
