@@ -64,3 +64,42 @@ int main(){
    
    return 0;
 }
+
+// Problem 3--
+// Inheritance 
+// Tpyes -- 1.3 Hierarchical Inheritance
+
+#include <iostream>
+using namespace std;
+class vehicle{
+    public:
+    void start(){
+        cout<<"Vehicle is start..."<<endl;
+    }
+    
+};
+
+class car: public vehicle {
+    public:
+    void drive() {
+        cout<<"Car is running...."<<endl;
+    }
+    
+    
+};
+class bike : public vehicle{
+  public:
+  void drive2(){
+      cout<<"Bike is running..."<<endl;
+  }
+};
+int main(){
+   bike obj1;
+   obj1.start();
+   obj1.drive2();
+   
+   car obj2;
+   obj2.start();
+   obj2.drive();
+   return 0;
+}
