@@ -43,3 +43,45 @@ int main(){
     return 0;
 }
 
+
+//Problem -- 2
+//Constructor Overloading
+
+#include <iostream>
+using namespace std;
+
+class Rectnagle{
+  public:
+  int length;
+  int width;
+  
+  Rectnagle(){
+      length = 1;
+      width = 1;
+  }
+  Rectnagle(int side) {
+      length = side;
+      width = side;
+  }
+  Rectnagle(int side1, int side2){
+      length = side1;
+      width = side2;
+  }
+  
+  void showArea(){
+      cout<< length * width << "\n";
+  }
+};
+
+int main(){
+    Rectnagle r1;
+    Rectnagle r2(5);
+    Rectnagle r3(5,4);
+    
+    r1.showArea();
+    r2.showArea();
+    r3.showArea();
+
+    return 0;
+}
+
