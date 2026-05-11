@@ -36,3 +36,35 @@ public:
         }
     }
 };
+
+//Palindrome a String
+
+#include <iostream>
+using namespace std;
+bool isPalindrome(string message) {
+    int start =0;
+    int end =message.size()-1;
+    
+    while (start < end) {
+        if(message[start] != message[end] ){
+            return false;
+        }
+        start++;
+        end--;
+    }
+    return true;
+}
+int main(){
+    string message;
+    cout<<"Enter the String:";
+    cin>> message;
+    
+    if(isPalindrome(message)) {
+        cout<< "Palindrome";
+    }
+    else {
+        cout<<"Not Palindrome...";
+    }
+    
+    return 0;
+}
