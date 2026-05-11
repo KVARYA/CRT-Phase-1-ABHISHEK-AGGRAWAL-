@@ -1,1 +1,21 @@
+// ROTATE ARRAY
 
+class Solution {
+public:
+    void rotateArray(vector<int>& nums, int start, int end) {
+        while (start < end) {
+            swap(nums[start], nums[end]);
+            start++;
+            end--;
+        }
+    }
+    void rotate(vector<int>& nums, int k) {
+        int n = nums.size();
+        k = k%n;
+        rotateArray(nums, 0, n-1); // rotating complete Array
+        rotateArray(nums, 0, k-1);// rotate k th element
+        rotateArray(nums, k, n-1); // rotate k to n-1
+        
+        
+    }
+};
