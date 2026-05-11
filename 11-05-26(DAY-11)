@@ -76,3 +76,20 @@ public:
       return s.size() == goal.size() && (s+s).find(goal) != -1;
     }
 };
+
+// VALID ANAGRAM 242
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+        if (s.size() != t.size()) {
+            return false;
+        }
+        sort(s.begin(), s.end());
+        sort(t.begin(), t.end());
+        if (s==t) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+};
