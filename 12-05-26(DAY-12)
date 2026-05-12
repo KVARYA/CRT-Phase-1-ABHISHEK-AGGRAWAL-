@@ -17,3 +17,24 @@ int main() {
     return 0;
 }
 
+
+//Problemm 2--
+// Recursion -- Print Factorial of a number
+#include <iostream>
+using namespace std;
+
+int factorial(int n) {
+    // Base Condition
+    if(n==0 || n==1){
+        return 1;
+    }
+    
+    // Logic 
+    
+    return n*factorial(n-1);
+    
+}
+int main() {
+    cout<<factorial(5);
+    return 0;
+}
