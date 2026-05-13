@@ -34,3 +34,26 @@ int main(){
     cout<<FillTile(10);
      return 0;
 }
+
+
+//House Robber 198
+class Solution {
+public:
+
+    int robFrom(vector<int>& nums, int index) {
+        //Base Condition
+        if(index >= nums.size()){
+            return 0;
+        }
+
+        //Logic
+        int include = nums[index] + robFrom(nums, index + 2);
+        int exclude =robFrom(nums, index + 1);
+
+        return max(include, exclude);
+    }   
+
+    int rob(vector<int>& nums) {
+        return robFrom(nums, 0);
+    }
+};
