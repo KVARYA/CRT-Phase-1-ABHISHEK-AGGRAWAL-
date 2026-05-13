@@ -1,4 +1,4 @@
-Linear Search 
+//Linear Search 
 #include <iostream>
 #include <vector>
 
@@ -41,7 +41,7 @@ int main() {
     return 0;
 }
 
-Binary Search 
+//Binary Search 
 #include <iostream>
 #include <vector>
 
@@ -75,7 +75,7 @@ int main() {
     return 0;
 }
 
-Bubble Sort
+//Bubble Sort
 #include <iostream>
 #include <vector>
 
@@ -105,7 +105,7 @@ int main() {
     return 0;
 }
 
-selection sort
+//selection sort
 #include <iostream>
 #include <vector>
 
@@ -138,6 +138,38 @@ int main() {
     
     return 0;
 }
+
+//Insertion sort
+#include <iostream>
+#include <vector>
+
+void insertionSort(std::vector<int>& arr) {
+    int n = arr.size();
+    for (int i = 1; i < n; ++i) {
+        int key = arr[i];
+        int j = i - 1;
+
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+}
+
+int main() {
+    std::vector<int> numbers = {70, 45, 23, 15, 11, 10};
+    
+    insertionSort(numbers);
+    
+    for (int i = 0; i < numbers.size(); ++i) {
+        std::cout << numbers[i] << " ";
+    }
+    std::cout << "\n";
+    
+    return 0;
+}
+
 
 //Problemm 2--
 // Recursion -- Print Factorial of a number
