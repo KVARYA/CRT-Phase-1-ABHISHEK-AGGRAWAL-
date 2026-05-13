@@ -17,3 +17,20 @@ int main(){
      return 0;
 }
 
+
+//Problem 2--
+//Tile Problem vertical 4x1 and Horizontal 1x4;
+
+#include <iostream>
+using namespace std;
+int FillTile(int n) {
+    //Base Condition
+    if (n == 1 || n == 2 || n == 3) return 1;
+    if (n == 4) return 2;
+    //logic
+    return FillTile(n-1)+FillTile(n-4);   
+}
+int main(){
+    cout<<FillTile(10);
+     return 0;
+}
