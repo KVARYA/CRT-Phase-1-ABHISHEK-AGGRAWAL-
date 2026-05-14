@@ -81,3 +81,21 @@ int main(){
     
      return 0;
 }
+
+
+// Reverse a Linked List 206
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode* prev = nullptr;
+        ListNode* curr = head;
+
+        while(curr != nullptr) {
+            ListNode* next = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = next;
+        }
+        return prev;
+    }
+};
