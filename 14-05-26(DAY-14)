@@ -1,4 +1,52 @@
-//Problem 1--
+// Problem -- 1
+// Insert at Head
+
+#include <iostream>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int data) {
+        this->data = data;
+        this->next = NULL;
+    }
+};
+
+Node* head = NULL;
+
+void insertAtHead(int data) {
+    Node* newNode = new Node(data);
+
+    newNode->next = head;
+    head = newNode;
+}
+
+void display() {
+    Node* temp = head;
+
+    while(temp != NULL) {
+        cout << temp->data << " -> ";
+        temp = temp->next;
+    }
+
+    cout << "NULL" << endl;
+}
+
+int main() {
+
+    insertAtHead(10);
+    insertAtHead(20);
+    insertAtHead(30);
+
+    display();
+
+    return 0;
+}
+
+//Problem 4--
 //Linked List Creation and Traversal
 
 #include <iostream>
@@ -35,7 +83,7 @@ int main(){
 }
 
 
-//Problem 2--
+//Problem 5--
 //Delete the data at the head of the LL
 
 #include <iostream>
