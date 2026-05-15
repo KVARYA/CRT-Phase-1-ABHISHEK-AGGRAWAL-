@@ -181,7 +181,201 @@ int main() {
     return 0;
 }
 
-//Problem 4--
+
+//Problem -- 4
+Delete at Head
+#include <iostream>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int data) {
+        this->data = data;
+        this->next = NULL;
+    }
+};
+
+Node* head = NULL;
+
+void deleteAtHead() {
+
+    if(head == NULL) {
+        cout << "List is Empty" << endl;
+        return;
+    }
+
+    head = head->next;
+}
+
+void display() {
+
+    Node* temp = head;
+
+    while(temp != NULL) {
+        cout << temp->data << " -> ";
+        temp = temp->next;
+    }
+
+    cout << "NULL" << endl;
+}
+
+int main() {
+
+    head = new Node(10);
+    head->next = new Node(20);
+    head->next->next = new Node(30);
+
+    deleteAtHead();
+
+    display();
+
+    return 0;
+}
+
+//Problem 5--
+Delete at Tail
+#include <iostream>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int data) {
+        this->data = data;
+        this->next = NULL;
+    }
+};
+
+Node* head = NULL;
+
+void deleteAtTail() {
+
+    if(head == NULL) {
+        cout << "List is Empty" << endl;
+        return;
+    }
+
+    if(head->next == NULL) {
+        head = NULL;
+        return;
+    }
+
+    Node* temp = head;
+
+    while(temp->next->next != NULL) {
+        temp = temp->next;
+    }
+
+    temp->next = NULL;
+}
+
+void display() {
+
+    Node* temp = head;
+
+    while(temp != NULL) {
+        cout << temp->data << " -> ";
+        temp = temp->next;
+    }
+
+    cout << "NULL" << endl;
+}
+
+int main() {
+
+    head = new Node(10);
+    head->next = new Node(20);
+    head->next->next = new Node(30);
+
+    deleteAtTail();
+
+    display();
+
+    return 0;
+}
+
+//Problem 6--
+Delete at Any Position
+#include <iostream>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int data) {
+        this->data = data;
+        this->next = NULL;
+    }
+};
+
+Node* head = NULL;
+
+void deleteAtPosition(int position) {
+
+    if(head == NULL || position <= 0) {
+        cout << "Invalid Operation" << endl;
+        return;
+    }
+
+    if(position == 1) {
+        head = head->next;
+        return;
+    }
+
+    Node* temp = head;
+
+    for(int i = 1; i < position - 1; i++) {
+
+        if(temp->next == NULL) {
+            cout << "Position out of range" << endl;
+            return;
+        }
+
+        temp = temp->next;
+    }
+
+    if(temp->next == NULL) {
+        cout << "Position out of range" << endl;
+        return;
+    }
+
+    temp->next = temp->next->next;
+}
+
+void display() {
+
+    Node* temp = head;
+
+    while(temp != NULL) {
+        cout << temp->data << " -> ";
+        temp = temp->next;
+    }
+
+    cout << "NULL" << endl;
+}
+
+int main() {
+
+    head = new Node(10);
+    head->next = new Node(20);
+    head->next->next = new Node(30);
+
+    deleteAtPosition(2);
+
+    display();
+
+    return 0;
+}
+
+
+//Problem 7--
 //Linked List Creation and Traversal
 
 #include <iostream>
