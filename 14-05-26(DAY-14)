@@ -46,6 +46,65 @@ int main() {
     return 0;
 }
 
+//Problem --2
+Insert at Tail
+#include <iostream>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int data) {
+        this->data = data;
+        this->next = NULL;
+    }
+};
+
+Node* head = NULL;
+
+void insertAtTail(int data) {
+
+    Node* newNode = new Node(data);
+
+    if(head == NULL) {
+        head = newNode;
+        return;
+    }
+
+    Node* temp = head;
+
+    while(temp->next != NULL) {
+        temp = temp->next;
+    }
+
+    temp->next = newNode;
+}
+
+void display() {
+    Node* temp = head;
+
+    while(temp != NULL) {
+        cout << temp->data << " -> ";
+        temp = temp->next;
+    }
+
+    cout << "NULL" << endl;
+}
+
+int main() {
+
+    insertAtTail(10);
+    insertAtTail(20);
+    insertAtTail(30);
+
+    display();
+
+    return 0;
+}
+
+
 //Problem 4--
 //Linked List Creation and Traversal
 
