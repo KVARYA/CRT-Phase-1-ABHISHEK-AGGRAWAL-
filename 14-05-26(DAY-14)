@@ -412,7 +412,7 @@ int main(){
 }
 
 
-//Problem 5--
+//Problem 8--
 //Delete the data at the head of the LL
 
 #include <iostream>
@@ -492,3 +492,5 @@ public:
         return slow;
     }
 };
+
+
