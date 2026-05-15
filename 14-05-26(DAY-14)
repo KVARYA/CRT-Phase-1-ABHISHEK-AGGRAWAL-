@@ -105,6 +105,82 @@ int main() {
 }
 
 
+//Problem --3
+Insert at Any Position
+#include <iostream>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int data) {
+        this->data = data;
+        this->next = NULL;
+    }
+};
+
+Node* head = NULL;
+
+void insertAtPosition(int data, int position) {
+
+    if(position <= 0) {
+        cout << "Invalid Position" << endl;
+        return;
+    }
+
+    Node* newNode = new Node(data);
+
+    if(position == 1) {
+        newNode->next = head;
+        head = newNode;
+        return;
+    }
+
+    Node* temp = head;
+
+    for(int i = 1; i < position - 1; i++) {
+
+        if(temp == NULL) {
+            cout << "Position out of range" << endl;
+            return;
+        }
+
+        temp = temp->next;
+    }
+
+    if(temp == NULL) {
+        cout << "Position out of range" << endl;
+        return;
+    }
+
+    newNode->next = temp->next;
+    temp->next = newNode;
+}
+
+void display() {
+    Node* temp = head;
+
+    while(temp != NULL) {
+        cout << temp->data << " -> ";
+        temp = temp->next;
+    }
+
+    cout << "NULL" << endl;
+}
+
+int main() {
+
+    insertAtPosition(10, 1);
+    insertAtPosition(20, 2);
+    insertAtPosition(30, 2);
+
+    display();
+
+    return 0;
+}
+
 //Problem 4--
 //Linked List Creation and Traversal
 
