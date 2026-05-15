@@ -1,4 +1,4 @@
-Reverse an Array 
+//Reverse an Array 
 #include <iostream>
 #include <stack>
 using namespace std;
@@ -28,7 +28,7 @@ int main()
 }
 
 
-Reverse a String 
+//Reverse a String 
 leetcode 344
 class Solution {
 public:
@@ -47,7 +47,7 @@ public:
 };
 
 
-Valid paranthesis
+// Valid paranthesis
 Leetcode 20
 class Solution {
 public:
@@ -72,7 +72,7 @@ public:
 };
 
 
-Next Greater Element 
+// Next Greater Element 
 GFG
 class Solution {
   public:
