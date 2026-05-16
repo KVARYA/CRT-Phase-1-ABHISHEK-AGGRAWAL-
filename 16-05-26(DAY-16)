@@ -25,3 +25,28 @@ public:
         
     }
 };
+
+
+//Problem 2--
+//94. Binary Tree Inorder Traversal
+class Solution {
+public:
+     void traversal(TreeNode* root, vector<int>& ans){
+    
+    // base condition
+    if(root == nullptr) {
+            return ;
+        }
+
+    // logic
+    
+    traversal(root->left, ans);
+    ans.push_back(root->val);
+    traversal(root->right, ans);
+    }
+    vector<int> inorderTraversal(TreeNode* root) {
+        vector<int> ans;
+        traversal(root, ans);
+        return ans;
+    }
+};
